@@ -1,0 +1,8 @@
+To replicate comet exception:
+
+* run ./sbt.sh
+* container:start
+* go http://localhost:8080/
+* type a random string in the search box and wait
+
+Alternatively type "package" to produce a war file and deploy that.

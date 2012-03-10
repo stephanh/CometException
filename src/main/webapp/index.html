@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <title>Home</title>
+  </head>
+  <body class="lift:content_id=main">
+    <div id="main" class="lift:surround?with=default;at=content">
+      <div class="lift:Search" id="search">
+        <div class="hero-unit">
+          <h2>Search</h2>
+          <div class="row">
+            <div class="span9">
+              <form class="lift:form.ajax well form-search">
+                <input id="search_in" type="text" class="input-medium search-query">
+                <button type="submit" class="btn"><i class="icon-search"></i>Search</button>
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="span9">
+              <div id="search_failure"></div>
+              <div class="lift:Msgs?showAll=true">
+                <lift:error_msg><a class="close" data-dismiss="alert">×</a></lift:error_msg>
+                <lift:error_class>alert alert-error</lift:error_class>
+                <lift:warning_msg><a class="close" data-dismiss="alert">×</a></lift:warning_msg>
+                <lift:warning_class>alert</lift:warning_class>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+      <div class="row">
+        <div class="span9">
+          <div class="lift:comet?type=ActorA">
+            ActorA
+            <div id="a">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span9">
+          <div class="lift:comet?type=ActorB">
+            ActorB
+            <div id="b">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
