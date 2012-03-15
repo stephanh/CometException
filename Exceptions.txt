@@ -68,3 +68,71 @@ Caused by: java.lang.IllegalStateException: IDLE,initial
 Caused by: java.lang.IllegalStateException: REDISPATCHED,resumed,expired
         at org.eclipse.jetty.server.AsyncContinuation.complete(AsyncContinuation.java:557) ~[na:na]
         ... 23 common frames omitted
+
+Using Lift 2.5-SNAPSHOT
+18:45:45.181 [pool-14-thread-3] ERROR net.liftweb.actor.ActorLogger - Actor threw an exception
+java.lang.reflect.InvocationTargetException: null
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.6.0_23]
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.6.0_23]
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.6.0_23]
+        at java.lang.reflect.Method.invoke(Method.java:616) ~[na:1.6.0_23]
+        at net.liftweb.http.provider.servlet.containers.Servlet30AsyncProvider.resume(Servlet30AsyncProvider.scala:106) ~[lift-webkit_2.9.1-2.5-SNAPSHOT.jar:2.5-SNAPSHOT]
+        at net.liftweb.http.provider.servlet.HTTPRequestServlet.resume(HTTPRequestServlet.scala:163) ~[lift-webkit_2.9.1-2.5-SNAPSHOT.jar:2.5-SNAPSHOT]
+        at net.liftweb.http.LiftServlet$$anonfun$12.apply(LiftServlet.scala:543) ~[lift-webkit_2.9.1-2.5-SNAPSHOT.jar:2.5-SNAPSHOT]
+        at net.liftweb.http.LiftServlet$$anonfun$12.apply(LiftServlet.scala:543) ~[lift-webkit_2.9.1-2.5-SNAPSHOT.jar:2.5-SNAPSHOT]
+        at net.liftweb.http.LiftServlet$ContinuationActor$$anonfun$messageHandler$1.apply(LiftServlet.scala:529) ~[lift-webkit_2.9.1-2.5-SNAPSHOT.jar:2.5-SNAPSHOT]
+        at net.liftweb.http.LiftServlet$ContinuationActor$$anonfun$messageHandler$1.apply(LiftServlet.scala:511) ~[lift-webkit_2.9.1-2.5-SNAPSHOT.jar:2.5-SNAPSHOT]
+        at net.liftweb.actor.LiftActor$class.execTranslate(LiftActor.scala:441) ~[lift-actor_2.9.1-2.5-SNAPSHOT.jar:2.5-SNAPSHOT]
+        at net.liftweb.http.LiftServlet$ContinuationActor.execTranslate(LiftServlet.scala:504) [lift-webkit_2.9.1-2.5-SNAPSHOT.jar:2.5-SNAPSHOT]
+        at net.liftweb.actor.SpecializedLiftActor$class.net$liftweb$actor$SpecializedLiftActor$$proc2(LiftActor.scala:289) [lift-actor_2.9.1-2.5-SNAPSHOT.jar:2.5-SNAPSHOT]
+        at net.liftweb.actor.SpecializedLiftActor$$anonfun$net$liftweb$actor$SpecializedLiftActor$$processMailbox$1.apply$mcV$sp(LiftActor.scala:210) [lift-actor_2.9.1-2.5-SNAPSHOT.jar:2.5-SNAPSHOT]
+        at net.liftweb.actor.SpecializedLiftActor$$anonfun$net$liftweb$actor$SpecializedLiftActor$$processMailbox$1.apply(LiftActor.scala:210) [lift-actor_2.9.1-2.5-SNAPSHOT.jar:2.5-SNAPSHOT]
+        at net.liftweb.actor.SpecializedLiftActor$$anonfun$net$liftweb$actor$SpecializedLiftActor$$processMailbox$1.apply(LiftActor.scala:210) [lift-actor_2.9.1-2.5-SNAPSHOT.jar:2.5-SNAPSHOT]
+        at net.liftweb.actor.SpecializedLiftActor$class.around(LiftActor.scala:224) [lift-actor_2.9.1-2.5-SNAPSHOT.jar:2.5-SNAPSHOT]
+        at net.liftweb.http.LiftServlet$ContinuationActor.around(LiftServlet.scala:504) [lift-webkit_2.9.1-2.5-SNAPSHOT.jar:2.5-SNAPSHOT]
+        at net.liftweb.actor.SpecializedLiftActor$class.net$liftweb$actor$SpecializedLiftActor$$processMailbox(LiftActor.scala:209) [lift-actor_2.9.1-2.5-SNAPSHOT.jar:2.5-SNAPSHOT]
+        at net.liftweb.actor.SpecializedLiftActor$$anonfun$2$$anonfun$apply$mcV$sp$1.apply$mcV$sp(LiftActor.scala:173) [lift-actor_2.9.1-2.5-SNAPSHOT.jar:2.5-SNAPSHOT]
+        at net.liftweb.actor.LAScheduler$$anonfun$9$$anon$2$$anon$3.run(LiftActor.scala:64) [lift-actor_2.9.1-2.5-SNAPSHOT.jar:2.5-SNAPSHOT]
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110) [na:1.6.0_23]
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603) [na:1.6.0_23]
+        at java.lang.Thread.run(Thread.java:679) [na:1.6.0_23]
+Caused by: java.lang.IllegalStateException: IDLE,initial
+        at org.eclipse.jetty.server.AsyncContinuation.complete(AsyncContinuation.java:569) ~[jetty-server-8.1.0.v20120127.jar:8.1.0.v20120127]
+        ... 24 common frames omitted
+18:45:45.261 [qtp65579783-100 - /comet_request/93300779093/167fqkfhy1orx1lomr4frx5hgv/F262768952318LOLEN2?F262768952321KVWBHV=262768952323&F26276895232521YWV5=262768952340&_=1331797545255] INFO  net.liftweb.util.TimeHelpers - Service request (GET) /comet_request/93300779093/167fqkfhy1orx1lomr4frx5hgv/F262768952318LOLEN2 returned 0, took 2 Milliseconds
+replying
+received by master
+Received from master
+18:45:49.786 [qtp65579783-99 - /comet_request/59628504281/167fqkfhy1orx1lomr4frx5hgv/F262768952318LOLEN2?F262768952321KVWBHV=262768952343&F26276895232521YWV5=262768952340&_=1331797549779] INFO  net.liftweb.util.TimeHelpers - Service request (GET) /comet_request/59628504281/167fqkfhy1orx1lomr4frx5hgv/F262768952318LOLEN2 returned 0, took 3 Milliseconds
+18:46:19.892 [qtp65579783-97 - /comet_request/45366963394/167fqkfhy1orx1lomr4frx5hgv/F262768952318LOLEN2?F262768952321KVWBHV=262768952343&F26276895232521YWV5=262768952340&_=1331797579884] INFO  net.liftweb.util.TimeHelpers - Service request (GET) /comet_request/45366963394/167fqkfhy1orx1lomr4frx5hgv/F262768952318LOLEN2 returned 0, took 4 Milliseconds
+replying
+Received from master
+18:46:24.684 [pool-14-thread-9] ERROR net.liftweb.actor.ActorLogger - Actor threw an exception
+java.lang.reflect.InvocationTargetException: null
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.6.0_23]
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.6.0_23]
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.6.0_23]
+        at java.lang.reflect.Method.invoke(Method.java:616) ~[na:1.6.0_23]
+        at net.liftweb.http.provider.servlet.containers.Servlet30AsyncProvider.resume(Servlet30AsyncProvider.scala:106) ~[lift-webkit_2.9.1-2.5-SNAPSHOT.jar:2.5-SNAPSHOT]
+        at net.liftweb.http.provider.servlet.HTTPRequestServlet.resume(HTTPRequestServlet.scala:163) ~[lift-webkit_2.9.1-2.5-SNAPSHOT.jar:2.5-SNAPSHOT]
+        at net.liftweb.http.LiftServlet$$anonfun$12.apply(LiftServlet.scala:543) ~[lift-webkit_2.9.1-2.5-SNAPSHOT.jar:2.5-SNAPSHOT]
+        at net.liftweb.http.LiftServlet$$anonfun$12.apply(LiftServlet.scala:543) ~[lift-webkit_2.9.1-2.5-SNAPSHOT.jar:2.5-SNAPSHOT]
+        at net.liftweb.http.LiftServlet$ContinuationActor$$anonfun$messageHandler$1.apply(LiftServlet.scala:529) ~[lift-webkit_2.9.1-2.5-SNAPSHOT.jar:2.5-SNAPSHOT]
+        at net.liftweb.http.LiftServlet$ContinuationActor$$anonfun$messageHandler$1.apply(LiftServlet.scala:511) ~[lift-webkit_2.9.1-2.5-SNAPSHOT.jar:2.5-SNAPSHOT]
+        at net.liftweb.actor.LiftActor$class.execTranslate(LiftActor.scala:441) ~[lift-actor_2.9.1-2.5-SNAPSHOT.jar:2.5-SNAPSHOT]
+        at net.liftweb.http.LiftServlet$ContinuationActor.execTranslate(LiftServlet.scala:504) [lift-webkit_2.9.1-2.5-SNAPSHOT.jar:2.5-SNAPSHOT]
+        at net.liftweb.actor.SpecializedLiftActor$class.net$liftweb$actor$SpecializedLiftActor$$proc2(LiftActor.scala:289) [lift-actor_2.9.1-2.5-SNAPSHOT.jar:2.5-SNAPSHOT]
+        at net.liftweb.actor.SpecializedLiftActor$$anonfun$net$liftweb$actor$SpecializedLiftActor$$processMailbox$1.apply$mcV$sp(LiftActor.scala:210) [lift-actor_2.9.1-2.5-SNAPSHOT.jar:2.5-SNAPSHOT]
+        at net.liftweb.actor.SpecializedLiftActor$$anonfun$net$liftweb$actor$SpecializedLiftActor$$processMailbox$1.apply(LiftActor.scala:210) [lift-actor_2.9.1-2.5-SNAPSHOT.jar:2.5-SNAPSHOT]
+        at net.liftweb.actor.SpecializedLiftActor$$anonfun$net$liftweb$actor$SpecializedLiftActor$$processMailbox$1.apply(LiftActor.scala:210) [lift-actor_2.9.1-2.5-SNAPSHOT.jar:2.5-SNAPSHOT]
+        at net.liftweb.actor.SpecializedLiftActor$class.around(LiftActor.scala:224) [lift-actor_2.9.1-2.5-SNAPSHOT.jar:2.5-SNAPSHOT]
+        at net.liftweb.http.LiftServlet$ContinuationActor.around(LiftServlet.scala:504) [lift-webkit_2.9.1-2.5-SNAPSHOT.jar:2.5-SNAPSHOT]
+        at net.liftweb.actor.SpecializedLiftActor$class.net$liftweb$actor$SpecializedLiftActor$$processMailbox(LiftActor.scala:209) [lift-actor_2.9.1-2.5-SNAPSHOT.jar:2.5-SNAPSHOT]
+        at net.liftweb.actor.SpecializedLiftActor$$anonfun$2$$anonfun$apply$mcV$sp$1.apply$mcV$sp(LiftActor.scala:173) [lift-actor_2.9.1-2.5-SNAPSHOT.jar:2.5-SNAPSHOT]
+        at net.liftweb.actor.LAScheduler$$anonfun$9$$anon$2$$anon$3.run(LiftActor.scala:64) [lift-actor_2.9.1-2.5-SNAPSHOT.jar:2.5-SNAPSHOT]
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110) [na:1.6.0_23]
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603) [na:1.6.0_23]
+        at java.lang.Thread.run(Thread.java:679) [na:1.6.0_23]
+Caused by: java.lang.IllegalStateException: COMPLETE
+        at org.eclipse.jetty.server.AsyncContinuation.complete(AsyncContinuation.java:569) ~[jetty-server-8.1.0.v20120127.jar:8.1.0.v20120127]
+        ... 24 common frames omitted

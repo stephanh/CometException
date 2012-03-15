@@ -8,11 +8,13 @@ scalaVersion := "2.9.1"
 
 // scalacOptions += "-deprecation"
 
+resolvers += "Snapshots Repository" at "https://oss.sonatype.org/content/repositories/snapshots/"
+
 seq(webSettings :_*)
 
 //Lift
 libraryDependencies ++= {
-  val liftVersion = "2.4"
+  val liftVersion = "2.5-SNAPSHOT"
   Seq(
     "net.liftweb" %% "lift-webkit" % liftVersion % "compile->default"
   )
