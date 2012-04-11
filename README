@@ -6,3 +6,4 @@ To replicate comet exception:
 * type a random string in the search box and wait
 
 Alternatively type "package" to produce a war file and deploy that.
+
